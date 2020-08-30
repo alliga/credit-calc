@@ -6,6 +6,7 @@ form {
     display: flex;
     flex-direction: column;
     padding: 25px 20px;
+    box-sizing: border-box;
 }
 form h2 {
     text-align: center;
@@ -75,7 +76,17 @@ form button:hover {
 
 @media (max-width: 767px) {
     form {
-        width: 90%;
+        width: 100%!important;
+    }
+    form input {
+        width: 80%;
+        margin: 0 auto 20px auto;
+        height: 30px;
+        text-align: center;
+        border-radius: 25px;
+        outline: none;
+        border: 0;
+        height: 50px;
     }
     .item {
         width: 100%;
