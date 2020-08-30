@@ -4,7 +4,7 @@
 }
 form {
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     background: lightgray;
     border-radius: 15px;
     display: flex;
@@ -64,6 +64,7 @@ form button:hover {
     box-sizing: border-box;
     border: 2px solid;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 .item:nth-child(odd) {
     margin-right: 10px;
@@ -79,6 +80,9 @@ form button:hover {
 @media (max-width: 767px) {
     form {
         width: 90%;
+    }
+    .item {
+        width: 100%;
     }
     .result-wrap {
         grid-template-columns: 1fr;
