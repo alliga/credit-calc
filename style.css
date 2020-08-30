@@ -1,5 +1,5 @@
 form {
-    width: 60%;
+    width: 100%!important;
     margin: 0 auto 40px;
     background: lightgray;
     border-radius: 15px;
@@ -16,13 +16,13 @@ form p {
     text-align: center;
 }
 form input {
-    width: 50%;
+    width: 80%;
     margin: 0 auto 20px auto;
-    height: 30px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 25px;
     outline: none;
     border: 0;
+    height: 50px;
 }
 form input[type=number]::-webkit-inner-spin-button,
 form input[type=number]::-webkit-outer-spin-button {
@@ -52,7 +52,7 @@ form button:hover {
 
 .result-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 .item {
     background: lightgray;
@@ -74,23 +74,8 @@ form button:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 979px) {
-    form {
-        width: 100%!important;
-    }
-    form input {
-        width: 80%;
-        margin: 0 auto 20px auto;
-        text-align: center;
-        border-radius: 25px;
-        outline: none;
-        border: 0;
-        height: 50px;
-    }
-    .item {
-        width: 100%;
-    }
-    .result-wrap {
-        grid-template-columns: 1fr;
-    }
+
+
+select:focus, textarea:focus, input:focus {
+    font-size: 16px;
 }
