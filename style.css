@@ -74,7 +74,7 @@ form button:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 979px) {
     form {
         width: 100%!important;
     }
