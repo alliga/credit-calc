@@ -11,7 +11,27 @@ getResult.addEventListener('click', function(e) {
 
     resultWrap.innerHTML='';
     e.preventDefault();
-    for (let i = 0; i<years; i++) { //количество лет
+
+    let resultDebt = (percent * years) * (debt / 100);
+    console.log(resultDebt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*for (let i = 0; i<years; i++) { //количество лет
         let percents = (debt/100)*percent; //процент
         debt += percents;
 
@@ -26,7 +46,7 @@ getResult.addEventListener('click', function(e) {
                                                                      <div class="item-title">Столько процентов набежит в этом году: <b>${Math.ceil(percents)}</b></div>
                                                                   </div>`);
 
-    }
+    }*/
 });
 
 
