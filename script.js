@@ -12,8 +12,8 @@ getResult.addEventListener('click', function(e) {
     resultWrap.innerHTML='';
     e.preventDefault();
 
-    let resultDebt = (percent * years) * (debt / 100);
-    console.log(resultDebt)
+    let resultDebt = (percent * years) * (debt / 100) + debt;
+    resultWrap.innerHTML = Math.floor(resultDebt);
 
 
 
